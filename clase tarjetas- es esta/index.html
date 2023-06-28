@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clase - tarjetas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="romero.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,8 @@
     </select>
 
     <div id="tarjetas">
-        <div id="tarjeta1">
+        <div id="general">
+        <div id="t1" class="tarjeta hidden">
             <h1>Gato Siames</h1>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Neighbours_Siamese.jpg" alt="">
             <p>
@@ -43,9 +45,10 @@
                 se remonta a cientos de años. Dice la leyenda que los siameses eran
                 sagrados y protegían los templos budistas.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/siames'>
         </div>
 
-        <div id="tarjeta2">
+        <div id="t2" class="tarjeta hidden">
             <h1>Gato Bosque de Noruega</h1>
             <img src="https://gatodomestico.com/wp-content/uploads/2019/01/gato-bosque-de-noruega-1.jpg" alt="">
             <p>
@@ -66,9 +69,10 @@
                 los Cruzados llevaron a Escandinavia, que posteriormente se aparearon con
                 gatos de granja y silvestres locales.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-noruega'>
         </div>
 
-        <div id="tarjeta3">
+        <div id="t3" class="tarjeta hidden">
             <h1>Gato Bengali</h1>
             <img src="https://www.tiendanimal.es/articulos/wp-content/uploads/2020/04/gato-bengali-1200x900.jpg" alt="">
             <p>
@@ -90,9 +94,10 @@
                 en EE. UU. El bengalí se llama así por el nombre en latín de su ancestro 
                 salvaje, el Felis bengalensis (gato leopardo asiático).
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bengali'>
         </div>
 
-        <div id="tarjeta4">
+        <div id="t4" class="tarjeta hidden">
             <h1>Gato Bombay</h1>
             <img src="https://www.feelcats.com/wp-content/uploads/2018/08/bombay-gato.jpg" alt="">
             <p>
@@ -112,9 +117,10 @@
                 unos criadores quisieron crear unos gatos de tipo burmés con colores no 
                 típicos del burmés. En el Reino Unido, el bombay es la versión negra del asiático.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bombay'>
         </div>
 
-        <div id="tarjeta5">
+        <div id="t5" class="tarjeta hidden">
             <h1>Gato Birmano</h1>
             <img src="https://1.bp.blogspot.com/-1wNwazrNoR4/X7lXU7AxOgI/AAAAAAAAuH4/U3USExFfJf0lvm-m4SjHUk0cYG8d5C8HgCLcBGAsYHQ/s743/Beautiful-Seal-Point-Birman-Cat.jpg" alt="">
             <p>
@@ -134,9 +140,10 @@
                 se dice que se llevó una pareja a Francia en 1919, a partir de la cual 
                 se estableció la raza en el mundo occidental.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/birmano'>
         </div>
 
-        <div id="tarjeta6">
+        <div id="t6" class="tarjeta hidden">
             <h1>Gato Korat</h1>
             <img src="https://gatosygatitos.net/wp-content/uploads/2012/09/Sin-t%C3%ADtulo-16.jpg" alt="">
             <p>
@@ -155,9 +162,10 @@
                 se conoce como Si-Sawat (que significa buena suerte), se regalaba una pareja de korat 
                 como presente tradicional para una novia.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/korat'>
         </div>
 
-        <div id="tarjeta7">
+        <div id="t7" class="tarjeta hidden">
             <h1>Gato Americano de pelo duro.</h1>
             <img src="https://animalesmascotas.com/wp-content/uploads/2013/10/razas-de-gatos-americano-pelo-corto-600x427.jpg" alt="">
             <p>
@@ -179,9 +187,10 @@
                 los Cruzados llevaron a Escandinavia, que posteriormente se aparearon con
                 gatos de granja y silvestres locales.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/americano-de-pelo-duro'>
         </div>
 
-        <div id="tarjeta8">
+        <div id="t8" class="tarjeta hidden">
             <h1>Gato Abisinio</h1>
             <img src="https://okdiario.com/img/2019/06/20/lo-que-necesitas-saber-sobre-la-raza-de-gato-abisinio-620x349.jpg" alt="">
             <p>
@@ -201,9 +210,11 @@
                 Origen: También recuerda al antepasado salvaje africano del gato doméstico. La historia 
                 del gato abisinio en el Reino Unido no es muy clara, pero seguramente lo trajo de 
                 Abisinia (actual Etiopía) el personal del ejército a su regreso en los 1860.
+            </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/abisinia'>
         </div>
 
-        <div id="tarjeta9">
+        <div id="t9" class="tarjeta hidden">
             <h1>Gato Bosque de Siberia</h1>
             <img src="https://www.mundogato.net/wp-content/uploads/gato-siberiano.jpg" alt="">
             <p>
@@ -223,29 +234,32 @@
                 existencia de los siberianos nada menos que en el año 1000 y se rumorea que es el 
                 antepasado de la mayoría de las razas de pelo largo actuales.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-siberia'>
         </div>
 
-        <div id="tarjeta10">
+        <div id="t10" class="tarjeta hidden">
             <h1>Gato Bobtail japonés de pelo corto</h1>
             <img src="https://images.spot.im/v1/production/fxe99nvuu9bqrzxuuvjd" alt="">
             <p>
             <p>
                 Cuerpo: El bobtail japonés tiene una forma elegante y una musculatura bien desarrollada.
-                Los bobtails pueden ser de pelo corto o largo. El pelaje es suave y sedoso y puede ser de muchos colores.
                 Tienen una cola que parece un pompón o una cola de conejo. Este es su razgo caracteristico: 
                 Cuando el gato está relajado y en posición natural, la cola esta enroscada como la de un conejo, 
                 pero la puede desenroscar hasta unos 10 o 12 cm.
             </p>
             <p>
-                Personalidad: El bobtail japonés es simpático e inteligente. Se dice que la raza es de naturaleza dulce, 
-                se lleva bien con casi todos los animales y le encanta la compañía humana. Algunos aprenden trucos 
-                y deben mantenerse entretenidos y estimulados. Es una raza bastante maulladora.
+                Personalidad: El bobtail japonés es simpático e inteligente. Se lleva bien con casi todos los animales 
+                y le encanta la compañía humana. Algunos aprenden trucos y deben mantenerse entretenidos y estimulados. 
+                Es una raza bastante maulladora.
             </p>
             <p>
-                Origen: En Japón, la existencia de la raza se remonta al siglo VIII, pero no se vio fuera de Japón hasta la década de los sesenta, cuando se importaron a Estados Unidos los bobtails japoneses de pelo corto.
+                Origen: En Japón, la existencia de la raza se remonta al siglo VIII, pero no se vio fuera de Japón hasta 
+                la década de los sesenta, cuando se importaron a Estados Unidos los bobtails japoneses de pelo corto.
             </p>
+            <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bobtail-de-pelo-corto'>
         </div>
     </div>
+</div>
 </body>
 
 </html>
