@@ -11,7 +11,8 @@
 
 <body>
     <h1>10 Razas de Gatos</h1>
-    <select id="seleccion" onchange="elegirdivs()">
+    <select id="seleccion" onchange="Elegirdivs()">
+        <option value="0" disabled selected>Seleccione cuantas razas desea ver</option>
         <option value="1">1 Raza</option>
         <option value="2">2 Razas</option>
         <option value="3">3 Razas</option>
@@ -24,9 +25,16 @@
         <option value="10">10 Razas</option>
     </select>
 
+    <select id="seleccion2" onchange="Elegirtipo()">
+        <option value="0" disabled selected>Seleccione que tipo de razas quiere ver</option>
+        <option value="1">Razas grandes</option>
+        <option value="2">Razas medianas</option>
+        <option value="3">Razas chicas</option>
+    </select>
+
     <div id="tarjetas">
         <div id="general">
-        <div id="t1" class="tarjeta hidden">
+        <div id="t1" class="tarjeta hidden mediano">
             <h1>Gato Siames</h1>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Neighbours_Siamese.jpg" alt="">
             <p>
@@ -48,7 +56,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/siames'>
         </div>
 
-        <div id="t2" class="tarjeta hidden">
+        <div id="t2" class="tarjeta hidden grande">
             <h1>Gato Bosque de Noruega</h1>
             <img src="https://gatodomestico.com/wp-content/uploads/2019/01/gato-bosque-de-noruega-1.jpg" alt="">
             <p>
@@ -72,7 +80,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-noruega'>
         </div>
 
-        <div id="t3" class="tarjeta hidden">
+        <div id="t3" class="tarjeta hidden mediano">
             <h1>Gato Bengali</h1>
             <img src="https://www.tiendanimal.es/articulos/wp-content/uploads/2020/04/gato-bengali-1200x900.jpg" alt="">
             <p>
@@ -97,7 +105,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bengali'>
         </div>
 
-        <div id="t4" class="tarjeta hidden">
+        <div id="t4" class="tarjeta hidden chico">
             <h1>Gato Bombay</h1>
             <img src="https://www.feelcats.com/wp-content/uploads/2018/08/bombay-gato.jpg" alt="">
             <p>
@@ -120,7 +128,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bombay'>
         </div>
 
-        <div id="t5" class="tarjeta hidden">
+        <div id="t5" class="tarjeta hidden mediano">
             <h1>Gato Birmano</h1>
             <img src="https://1.bp.blogspot.com/-1wNwazrNoR4/X7lXU7AxOgI/AAAAAAAAuH4/U3USExFfJf0lvm-m4SjHUk0cYG8d5C8HgCLcBGAsYHQ/s743/Beautiful-Seal-Point-Birman-Cat.jpg" alt="">
             <p>
@@ -143,7 +151,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/birmano'>
         </div>
 
-        <div id="t6" class="tarjeta hidden">
+        <div id="t6" class="tarjeta hidden chico">
             <h1>Gato Korat</h1>
             <img src="https://gatosygatitos.net/wp-content/uploads/2012/09/Sin-t%C3%ADtulo-16.jpg" alt="">
             <p>
@@ -165,8 +173,8 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/korat'>
         </div>
 
-        <div id="t7" class="tarjeta hidden">
-            <h1>Gato Americano de pelo duro.</h1>
+        <div id="t7" class="tarjeta hidden mediano">
+            <h1>Gato Americano de pelo duro</h1>
             <img src="https://animalesmascotas.com/wp-content/uploads/2013/10/razas-de-gatos-americano-pelo-corto-600x427.jpg" alt="">
             <p>
             <p>
@@ -190,7 +198,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/americano-de-pelo-duro'>
         </div>
 
-        <div id="t8" class="tarjeta hidden">
+        <div id="t8" class="tarjeta hidden grande">
             <h1>Gato Abisinio</h1>
             <img src="https://okdiario.com/img/2019/06/20/lo-que-necesitas-saber-sobre-la-raza-de-gato-abisinio-620x349.jpg" alt="">
             <p>
@@ -214,7 +222,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/abisinia'>
         </div>
 
-        <div id="t9" class="tarjeta hidden">
+        <div id="t9" class="tarjeta hidden grande">
             <h1>Gato Bosque de Siberia</h1>
             <img src="https://www.mundogato.net/wp-content/uploads/gato-siberiano.jpg" alt="">
             <p>
@@ -237,7 +245,7 @@
             <input type="button" value="Sitio web" onclick=location.href='https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-siberia'>
         </div>
 
-        <div id="t10" class="tarjeta hidden">
+        <div id="t10" class="tarjeta hidden mediano">
             <h1>Gato Bobtail japonés de pelo corto</h1>
             <img src="https://images.spot.im/v1/production/fxe99nvuu9bqrzxuuvjd" alt="">
             <p>
