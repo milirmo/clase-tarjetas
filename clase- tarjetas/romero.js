@@ -57,3 +57,30 @@ function Elegirtipo() {
         }
     }
 }
+
+let numtarjeta=11;
+function Agregarazas () {
+    const tarjetanueva= document.createElement('div');
+    tarjetanueva.classList.add("tarjeta");
+
+    let titulo= document.createElement('h2');
+    let tl= document.getElementById('titulo').value;
+    titulo.innerHTML=tl;
+
+    let imagen= document.createElement('img');
+    let im= document.getElementById('imagen').value;
+    imagen.setAttribute("src", im);
+
+    let texto= document.createElement('p');
+    let tx= document.getElementById('texto');
+    texto.innerHTML=tx;
+
+    let boton= document.createElement('input');
+    boton.setAttribute('type', "button");
+    boton.setAttribute('value', "Sitio web");
+
+    tarjetanueva.append(titulo,imagen,texto,boton);
+    
+    const tarjetas= document.getElementById("general");
+    tarjetas.appendChild(tarjetanueva);
+}
