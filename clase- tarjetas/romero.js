@@ -63,7 +63,7 @@ function Agregarazas () {
     const tarjetanueva= document.createElement('div');
     tarjetanueva.classList.add("tarjeta");
 
-    let titulo= document.createElement('h2');
+    let titulo= document.createElement('h1');
     let tl= document.getElementById('titulo').value;
     titulo.innerHTML=tl;
 
@@ -72,14 +72,18 @@ function Agregarazas () {
     imagen.setAttribute("src", im);
 
     let texto= document.createElement('p');
-    let tx= document.getElementById('texto');
+    let tx= document.getElementById('texto').value;
     texto.innerHTML=tx;
 
-    let boton= document.createElement('input');
-    boton.setAttribute('type', "button");
-    boton.setAttribute('value', "Sitio web");
+    let botoninfo= document.createElement('input');
+    botoninfo.setAttribute('type', "button");
+    botoninfo.setAttribute('value', "Sitio web");
 
-    tarjetanueva.append(titulo,imagen,texto,boton);
+    let botoneliminar= document.createElement('input');
+    botoneliminar.setAttribute('type', "button");
+    botoneliminar.setAttribute('value', "Eliminar");
+
+    tarjetanueva.append(titulo,imagen,texto,botoninfo,botoneliminar);
     
     const tarjetas= document.getElementById("general");
     tarjetas.appendChild(tarjetanueva);
