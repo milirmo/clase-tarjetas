@@ -58,7 +58,6 @@ function Elegirtipo() {
     }
 }
 
-let numtarjeta=11;
 function Agregarazas () {
     const tarjetanueva= document.createElement('div');
     tarjetanueva.classList.add("tarjeta");
